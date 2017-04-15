@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Jumpy Map Editor</title>
+	<link rel="stylesheet" href="style/mapeditor.css" />
+</head>
+
+<body>
+	<div id="kontrolle"></div>
+
+	<div id="topControls">
+		<div class="control">Height: <input id="height" size="1" type="text"></input></div>
+		<div class="control">Width: <input id="width" size="1" type="text"></input></div>
+		<div class="control">Gravity: <input id="gravity" size="1" type="text"></input></div>
+		<div class="control">Jump Height: <input id="jumpheight" size="1" type="text"></input></div>
+		<div class="control">Walk Speed: <input id="walkspeed" size="1" type="text"></input></div>
+		<div class="control">Run Speed: <input id="runspeed" size="1" type="text"></input></div>
+		<div class="control">Background: <input id="bgcolor" size="1" type="text" value="#000"></input></div>
+	</div>
+
+	<div id="canvasContainer" style="top: 80px; left: 10px;">
+		<canvas id="canvas" width=1100 height=500></canvas>
+	</div>
+
+	<div id="controlContainer">
+		<canvas id="thumbCanvas"></canvas>
+		<canvas id="spriteCanvas" width=150 height=100></canvas>
+
+		<button id="single" class="highlight" title="single">Single</button>
+		<button id="area" title="area">Area</button>
+		<button id="draw" class="highlight" title="draw">Draw</button>
+		<button id="erase" title="erase">Erase</button>
+		<button id="undo" title="undo">&#8630 </button>
+		<button id="redo" title="redo">&#8631 </button>
+		<button id="reset">Reset</button>
+		<button id="showcode">Code</button>
+		<button id="startgame">Run</button>
+	</div>
+
+	<div id="shield" class="hidden"></div>
+	<div id="code" class="hidden"></div>
+
+	<script src="js/lib/jquery-1.8.3.min.js"></script>
+	<script src="js/editor/mapeditor.js"></script>
+</body>
+</html>

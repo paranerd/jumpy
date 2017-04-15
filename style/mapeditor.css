@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'aaargh';
+    src: url('../font/aaargh.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: aaargh;
+	font-size: 14px;
+	margin-top: 0px;
+	margin-left: 0px;
+	background-color: #333;
+	overflow: hidden;
+}
+
+button {
+	position: absolute;
+	height: 50px;
+	font-family: aaargh;
+	font-size: 14px;
+	outline: none;
+	/*border-radius: 2px;*/
+	border-color: none;
+	border: 1px solid lightgrey;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:active {
+	vertical-align: top;
+	padding-top: 1px;
+	background-color: #555;
+	border-color: #555;
+	color: white;
+}
+
+#topControls {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	height: 30px;
+	width: 85%;
+}
+
+#controlContainer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 15%;
+}
+
+#canvasContainer {
+	position: absolute;
+	top: 80px;
+	left: 10px;
+	height: 80%;
+	width: 85%;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+#canvas {
+	position: absolute;
+}
+
+#undo {
+	bottom: 170px;
+	left: 25px;
+	width: 75px;
+	font-size: 32px;
+}
+
+#redo {
+	bottom: 170px;
+	left: 105px;
+	width: 75px;
+	font-size: 32px;
+}
+
+#reset {
+	bottom: 110px;
+	left: 25px;
+	width: 75px;
+}
+
+#showcode {
+	bottom: 110px;
+	left: 105px;
+	width: 75px;
+}
+
+#startgame {
+	bottom: 50px;
+	left: 25px;
+	width: 155px;
+}
+
+#spriteCanvas {
+	position: absolute;
+	top: 3%;
+	left: 25px;
+	border-radius: 2px;
+}
+
+#thumbCanvas {
+	position: absolute;
+	top: 140px;
+	left: 25px;
+	height: 150px;
+	width: 150px;
+	border-radius: 2px;
+	float: left;
+}
+
+#drawMode {
+	position: absolute;
+	font-size: bold;
+	margin-top: 20px;
+}
+
+#topControls {
+	font-size: 14px;
+}
+
+.control {
+	float: left;
+	margin-right: 10px;
+	color: lightgrey;
+}
+
+.control input {
+	text-align: right;
+}
+
+input {
+	border: none;
+}
+
+.highlight {
+	background-color: #555;
+	border-color: #555;
+	color: white;
+	font-weight: bold;
+}
+
+#single {
+	bottom: 290px;
+	left: 25px;
+	width: 75px;
+}
+
+#area {
+	bottom: 290px;
+	left: 105px;
+	width: 75px;
+}
+
+#draw {
+	bottom: 230px;
+	left: 25px;
+	width: 75px;
+}
+
+#erase {
+	bottom: 230px;
+	left: 105px;
+	width: 75px;
+}
+
+.hidden {
+	display: none;
+}
+
+#shield {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#code {
+	position: absolute;
+	height: 80%;
+	width: 80%;
+	background-color: white;
+	border-radius: 2px;
+	padding: 20px;
+	font-family: monospace;
+}
+
+#kontrolle {
+	position: absolute;
+	margin-top: 0px;
+	color: white;
+}
